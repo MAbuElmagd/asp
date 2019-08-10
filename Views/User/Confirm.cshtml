@@ -1,0 +1,67 @@
+﻿@model Books_Recommendation_System.Models.User
+
+@{
+    ViewBag.Title = "Confirm";
+}
+
+<h2>Congratulations, you have regestaired successfully</h2>
+
+
+<div>
+    <h4>User</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Age)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Age)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PreferCatg)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PreferCatg)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookLength)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookLength)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Language)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Language)
+        </dd>
+
+    </dl>
+</div>
+<p>
+   
+    @Html.ActionLink("Back to List", "Index")
+</p>

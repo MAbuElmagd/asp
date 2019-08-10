@@ -1,0 +1,66 @@
+﻿@model Books_Recommendation_System.Models.Book
+
+@{
+    ViewBag.Title = "Addition";
+}
+
+<h2>Addition</h2>
+
+<div>
+    <h4>Book</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PublishYear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PublishYear)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Categories)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Categories)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BookLength)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BookLength)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Language)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Language)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Author)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Author)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
